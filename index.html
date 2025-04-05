@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<link rel="stylesheet"  href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="images/journey-of-code-high-resolution-logo.png">
+</head>
+<body>
+	 <div class="wrapp"> 
+	 	<form action="/action_page.php" target="_blank" method="get" enctype="multipart/form-data" autocomplete="off">
+	 		<h2>Food Safety Training Registration Form</h2>
+	 	    <p>Please fill out the form below to register for the food safety training.</p>
+	 		<label for="First_name">First Name:</label><br>
+	 		<input type="text" id="First_name" name="First_name" placeholder="Type your first name" class="First_name"><br>
+
+	 		<label for="Last_name">Last Name:</label><br>
+	 		<input type="text" placeholder="Type your last name" name="Last_name" id="Last_name" class="Last_name">
+	 		<br>
+
+
+	 		<label for="birthday">Birthday: </label><br>
+	 		<input type="date" id="birthday" name="birthday" class="birthday">
+	 		<br>
+
+            <label for="email_address">Email Address: </label>
+            <input type="email" placeholder="Type your email address" name="email_address" id="email_address" class="email_address"><br>
+
+            <label for="Pnumber">Phone Number: </label>
+            <input type="number" placeholder="0000 000 0000" name="Pnumber" id="Pnumber" class="Pnumber"><br>
+
+            <label for="Organization">Organization Name: </label>
+            <input type="text" placeholder="Type your organization name" name="Organization" id="Organization" class="Organization"><br>
+            
+            <h4>Select your organization type:</h4>
+            <form>
+              <input type="radio" id="O_Type" name="organization"  value="public">
+              <label for="O_Type">Public </label>
+
+              <input type="radio" id="O_Type" name="organization"  value="private">
+              <label for="O_Type">Private </label>
+
+              <input type="radio" id="O_Type" name="organization"  value="others">
+              <label for="O_Type">Others </label>
+            </form>
+              <br> 
+              <h4>Select your write match: </h4>
+               <form>
+               	<input type="checkbox" id="fes" name="feasibility" value="Student">
+               	<label for="fes">Student</label>
+
+                <input type="checkbox" id="fes" name="feasibility" value="Job holder">
+               	<label for="fes">Job Holder</label>
+
+               	<input type="checkbox" id="fes" name="feasibility" value="Teacher">
+               	<label for="fes">Teacher</label>
+
+               	<input type="checkbox" id="fes" name="feasibility" value="Job Seeker">
+               	<label for="fes">Job Seeker</label>
+
+               	<input type="checkbox" id="fes" name="feasibility" value="Entrepreneur">
+               	<label for="fes">Entrepreneur</label>
+               </form>
+
+              <br>
+            <label for="Title">Position/Title: </label>
+            <select id="Title" name="Title">
+            	 <option value="officer">Officer</option>
+            	 <option value="senior officer">Senior Officer</option>
+            	 <option value="executive officer">Executive Officer</option>
+            	 <option value="senior executive officer">Senior Executive Officer</option>
+            </select>  
+            <br>
+             
+             <h4>Write your take: </h4>
+            <textarea name="message" rows="10" cols="30" placeholder="Write your take about food safety"></textarea>
+            <br>
+             
+             <h3>Upload your photo: </h3>
+            <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"> 
+            <br>
+
+            <label for="T_date">Training Date: </label>
+            <input type="date" placeholder="" name="T_date" id="T_date" class="T_date">
+            <br>
+
+            <label for="Phone">Write your telephone number: </label>
+            <input type="tel" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="Phone" id="Phone" class="Phone" >
+            <br>
+
+            <label for="favcolor">Select your required color: </label>
+            <input type="color" id="favcolor" name="favcolor" >
+            <br>
+
+            <label for="files">Upload required files: </label>
+            <input type="file" id="files" name="files" multiple class="files">
+            <br>
+
+            <label for="pin">Input your secret PIN number: </label>
+            <input type="text" id="pin" name="pin" maxlength="4" size="4" class="pin">
+            <br>
+
+            <label for="pwd">Password: </label><br>
+            <input type="password" id="pwd" name="pwd" class="pwd"> <br>
+
+             <label for="search">Search here: </label><br>
+             <input type="search" id="search" name="search" class="search">
+             <br>
+             <br>
+             <br>
+            
+            <input type="submit" value="Submit"> <input type="reset" value="Reset">
+            <br>
+            <br>
+
+            <button onclick="Click"> Click Me!</button>
+
+	 	</form>
+	 </div>
+
+</body>
+</html>
